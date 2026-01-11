@@ -12,9 +12,9 @@ const Header = () => {
   return (
     <>
       <div className="hidden md:flex items-center justify-between text-white  md:mx-5 lg:mx-[40px] xl:mx-[80px] mt-[32px]">
-        <div>
+        <a href="/">
           <img src="/trackforce-logo.svg" alt="" />
-        </div>
+        </a>
         <div className="flex items-center gap-6">
           <Link to="/product" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Product</Link>
           <Link to="/changelog" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Changelog</Link>
@@ -22,8 +22,8 @@ const Header = () => {
           <Link to="/contact" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Contact Sales</Link>
         </div>
         <div className="flex items-center gap-6">
-          <button className="font-medium text-sm font-inter leading-[150%]">Sign in</button>
-          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm font-inter leading-[150%]">Start for Free</button>
+          <button className="font-medium text-sm font-inter leading-[150%] hover:text-white/90 transition duration-200">Sign in</button>
+          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm font-inter leading-[150%] hover:text-white/90 transition duration-200">Start for Free</button>
         </div>
       </div>
       <div className="block md:hidden">

@@ -18,13 +18,13 @@ const menuVariants = {
 
 const MobileNav = ({ isOpen, onToggle }: { isOpen: boolean; onToggle: () => void; }) => {
   return (
-    <div className="flex justify-between items-center px-4 mt-5">
+    <div className="flex justify-between items-center px-4 mt-8 mx-2">
       <a href="/">
         <img src="/trackforce-logo.svg" alt="" />
       </a>
       <button className="cursor-pointer" onClick={onToggle}>
         {isOpen ?
-          <IoMdClose className="size-5 fixed top-5 right-4 z-[99] text-white cursor-pointer" />
+          <IoMdClose className="size-5 fixed top-8 right-7 z-[99] text-white cursor-pointer" />
           : <MdMenu className="size-6 cursor-pointer text-white" />
         }
       </button>
@@ -46,13 +46,19 @@ const MobileNav = ({ isOpen, onToggle }: { isOpen: boolean; onToggle: () => void
                 damping: 20,
               }}
             >
-              <div className="flex flex-col gap-12 items-center justify-center pt-[50px] text-white">
+              <div className="flex flex-col gap-12 items-center justify-center pt-[70px] text-white">
                 <Link className="hover-underline-animation" onClick={onToggle} to="/product">Product</Link>
                 <Link className="hover-underline-animation" onClick={onToggle} to="/changelog">Changelog</Link>
                 <Link className="hover-underline-animation" onClick={onToggle} to="/pricing">Pricing</Link>
                 <Link className="hover-underline-animation" onClick={onToggle} to="/contact">Contact Sales</Link>
               </div>
-
+              <div className="mt-96 flex flex-col items-center gap-6">
+                <button className="font-medium text-sm font-inter leading-[150%] text-white">Sign in</button>
+                <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm font-inter leading-[150%]">Start for Free</button>
+                <div className="mt-5">
+                  <img src="/trackforce-logo.svg" alt="" />
+                </div>
+              </div>
             </motion.div>
           </motion.div>
         )}
