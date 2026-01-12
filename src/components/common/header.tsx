@@ -16,14 +16,14 @@ const Header = () => {
           <img src="/trackforce-logo.svg" alt="" />
         </a>
         <div className="flex items-center gap-6">
-          <Link to="/product" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Product</Link>
-          <Link to="/changelog" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Changelog</Link>
-          <Link to="/pricing" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Pricing</Link>
-          <Link to="/contact" className="hover-underline-animation font-medium font-inter text-[16px] leading-[150%]">Contact Sales</Link>
+          <Link to="/product" className="hover-underline-animation font-medium  text-[16px] leading-[150%]">Product</Link>
+          <Link to="/changelog" className="hover-underline-animation font-medium  text-[16px] leading-[150%]">Changelog</Link>
+          <Link to="/pricing" className="hover-underline-animation font-medium  text-[16px] leading-[150%]">Pricing</Link>
+          <Link to="/contact" className="hover-underline-animation font-medium  text-[16px] leading-[150%]">Contact Sales</Link>
         </div>
         <div className="flex items-center gap-6">
-          <button className="font-medium text-sm font-inter leading-[150%] hover:text-white/90 transition duration-200">Sign in</button>
-          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm font-inter leading-[150%] hover:text-white/90 transition duration-200">Start for Free</button>
+          <button className="font-medium text-sm leading-[150%] hover:text-white/90 transition duration-200">Sign in</button>
+          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-[150%] hover:text-white/90 transition duration-200">Start for Free</button>
         </div>
       </div>
       <div className="block md:hidden">

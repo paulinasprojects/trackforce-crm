@@ -6,6 +6,7 @@
 
 body {
   background: #06080b;
+  font-family: "Inter", sans-serif;
 }
 
 .main-layout {
@@ -46,4 +47,13 @@ body {
 
 .button-gradient {
   background: linear-gradient(rgba(255, 255, 255, 0.821) 0%, rgba(1, 26, 255, 0.9) 100%);
+}
+
+.wrapper {
+  box-shadow:
+    0 0 0 1px rgba(254, 253, 255, 0.12),
+    0 1px 3px rgba(254, 253, 255, 1),
+    0 1px 1px rgba(254, 253, 255, 1),
+    0 1px 1px rgba(254, 253, 255, 0.12);
+  background: #1a1a1a;
 }
