@@ -62,3 +62,72 @@ export const featuresDataTwo = [
     imageSrc: "/feature-image-6.png",
   },
 ];
+
+
+export const pricingData = [
+  {
+    id: 1,
+    name: "Starter Plan",
+    mostPopular: false,
+    duration: "/month",
+    description: "Perfect for small businesses just getting started.",
+    price: "$19",
+    features: [
+      "Up to 3 users",
+      "Basic Sales & Marketing Tools",
+      "Contact Management",
+      "Reporting & Analytics",
+      "Basic API Access",
+      "Email Support",
+      "Community Access",
+    ],
+  },
+  {
+    id: 2,
+    name: "Professional Plan",
+    mostPopular: true,
+    duration: "/month",    
+    description: "For growing businesses to scale their customer relationships.",
+    price: "$49",
+    features: [
+      "Up to 10 users",
+      "All Starter Features",
+      "Advanced Sales Automation",
+      "Omnichannel Support",
+      "Custom Dashboards",
+      "Integration with 5+ tools",
+    ], 
+  },
+  {
+    id: 3,
+    name: "Business Plan",
+    mostPopular: false,
+    duration: "/month",
+    description: "Ideal for larger teams needing more power and flexibility.",
+    price: "$99",
+    features: [
+      "Unlimited users",
+      "All Professional Features",
+      "Data-Driven Marketing Tools",
+      "AI-Powered Sales Recommendations",
+      "Custom Workflows & Automation",
+      "Priority Support",
+    ], 
+  },
+  {
+    id: 4,
+    name: "Enterprise Plan",
+    mostPopular: false,
+    duration: "",
+    description: "Tailored solutions for enterprises with complex needs.",
+    price: "Contact Us",
+    features: [
+      "Custom Pricing",
+      "Dedicated Account Manager",
+      "Unlimited Users & Features",
+      "Advanced Security & Compliance",
+      "Full Suite of Integrations",
+      "24/7 VIP Support",
+    ], 
+  },
+]
