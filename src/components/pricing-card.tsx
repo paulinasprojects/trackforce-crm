@@ -15,7 +15,7 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
     <div className="">
       <div className={cn(
         "",
-        mostPopular ? "outline rounded-2xl outline-[#7c84ff]" : "outline outline-[#ffff] rounded-2xl",
+        mostPopular ? "outline rounded-2xl outline-[#7c84ff]" : "wrapper rounded-2xl",
       )}>
         {mostPopular && (
           <div className="bg-[#7c84ff] text-white text-center rounded-t-2xl py-[12px]  text-[16px] font-medium">
@@ -23,11 +23,11 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
           </div>
         )}
         <div className="p-6">
-          <p className="text-2xl font-medium">{name}</p>
+          <p className="text-2xl font-medium text-white">{name}</p>
           <p className="text-[14px] text-[#c2c2c2] mt-4">{description}</p>
           <div className="mt-6">
-            <span className="text-[40px] font-medium">{price}</span>
-            <span className="text-lg">{duration}</span>
+            <span className="text-[40px] font-medium text-white">{price}</span>
+            <span className="text-lg text-white">{duration}</span>
           </div>
           <div className="mt-4 flex flex-col gap-3">
             {features.map((feature, idx) => (
@@ -40,7 +40,7 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
             ))}
           </div>
           <div className="mt-[56px] flex flex-col gap-4">
-            <button className="button-gradient px-2 py-2 rounded-md text-sm">Get Started</button>
+            <button className="button-gradient px-2 py-2 rounded-md text-sm text-white">Get Started</button>
             <span className="text-center text-[16px] text-[#c2c2c2]">No credit card needed</span>
           </div>
         </div>

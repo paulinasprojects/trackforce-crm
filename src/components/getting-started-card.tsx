@@ -12,7 +12,7 @@ const GettingStartedCard = ({ title, description, icon: Icon }: Props) => {
         <Icon />
       </div>
       <div>
-        <p className="xl:text-[24px] text-lg font-medium">{title}</p>
+        <p className="xl:text-[24px] text-lg font-medium text-white">{title}</p>
         <p className="text-sm text-[#c2c2c2] mt-4">{description}</p>
       </div>
     </div>

@@ -57,3 +57,26 @@ body {
     0 1px 1px rgba(254, 253, 255, 0.12);
   background: #1a1a1a;
 }
+
+.integration-gradient {
+  background: linear-gradient(90deg, #161616, #151515, #131313, #121212, #101010, #0e0e0e, #0c0c0c, #0a0a0a);
+}
+
+.integration-background {
+  position: relative;
+  background-image: url("/integration-background.png");
+  height: 857px;
+  background-position: center;
+
+  @media (max-width: 1024px) {
+    height: 601px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 550px;
+  }
+
+  @media (max-width: 767px) {
+    height: 437px;
+  }
+}
