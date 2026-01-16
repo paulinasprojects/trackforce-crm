@@ -1,3 +1,4 @@
+import CtaSection from "../components/cta-section"
 import FeatureSection from "../components/feature-section"
 import GettingStarted from "../components/getting-started"
 import Hero from "../components/hero"
@@ -16,6 +17,7 @@ const HomePage = () => {
       <PricingSection />
       <WhatOurCustomersSay />
       <IntegrationSection />
+      <CtaSection />
     </>
   )
 }
