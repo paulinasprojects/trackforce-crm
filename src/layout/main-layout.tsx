@@ -4,9 +4,9 @@ import Header from "../components/common/header"
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="">
+    <div className="main-layout">
       <Header />
-      <div className="">
+      <div className="children-container">
         {children}
       </div>
       <Footer />

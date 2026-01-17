@@ -2,6 +2,7 @@ import { cn } from "../lib/utils";
 import { BsCheck } from "react-icons/bs";
 
 interface PricingCardProps extends React.HTMLAttributes<HTMLDivElement> {
+  isStarter: boolean;
   mostPopular: boolean;
   name: string;
   duration: string;
@@ -10,15 +11,15 @@ interface PricingCardProps extends React.HTMLAttributes<HTMLDivElement> {
   features: string[];
 }
 
-const PricingCard = ({ name, duration, description, price, features, mostPopular }: PricingCardProps) => {
+const PricingCard = ({ name, duration, description, price, features, mostPopular, isStarter }: PricingCardProps) => {
   return (
     <div className="">
       <div className={cn(
-        "",
+        "h-full",
         mostPopular ? "outline rounded-2xl outline-[#7c84ff]" : "wrapper rounded-2xl",
       )}>
         {mostPopular && (
-          <div className="bg-[#7c84ff] text-white text-center rounded-t-2xl py-[12px]  text-[16px] font-medium">
+          <div className="bg-[#7c84ff] text-white text-center rounded-t-2xl py-2  text-[16px] font-medium">
             Most Popular
           </div>
         )}
@@ -39,7 +40,7 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
               </div>
             ))}
           </div>
-          <div className="mt-[56px] flex flex-col gap-4">
+          <div className={cn("mt-[56px] flex flex-col gap-4", mostPopular && "mt-[65px]", isStarter && "mt-[69px]")}>
             <button className="button-gradient px-2 py-2 rounded-md text-sm text-white">Get Started</button>
             <span className="text-center text-[16px] text-[#c2c2c2]">No credit card needed</span>
           </div>

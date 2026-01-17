@@ -13,7 +13,7 @@ const FeatureSection = () => {
           <button className="mt-[24px] button-gradient px-3 py-2 rounded-md w-full md:w-fit text-white">View All Features</button>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col gap-6 text-white mt-[57px]">
+      <div className="flex lg:flex-row flex-col gap-6 mt-[57px]">
         {featuresDataOne.map((feature) => (
           <FeatureCard
             key={feature.id}
@@ -23,7 +23,7 @@ const FeatureSection = () => {
           />
         ))}
       </div>
-      <div className="flex lg:flex-row flex-col gap-6 text-white mt-[24px]">
+      <div className="flex lg:flex-row flex-col gap-6 mt-[24px]">
         {featuresDataTwo.map((featuretwo) => (
           <FeatureCard key={featuretwo.id}
             title={featuretwo.title}
