@@ -25,7 +25,7 @@ const SignInForm = () => {
   return (
     <div className="bg-[#0a0c16] w-full xl:h-full h-screen">
       <div className="xl:py-12 py-[158px]">
-        <Card className="md:w-[740px] w-[327px]  wrapper mx-auto rounded-[30px]">
+        <Card className="lg:w-[740px] md:w-[650px] w-[327px]   wrapper mx-auto rounded-[30px]">
           <CardContent>
             <div>
               <div className="flex flex-col items-center gap-[16px] mt-[44px]">
