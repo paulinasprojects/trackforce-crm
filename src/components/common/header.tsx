@@ -22,8 +22,11 @@ const Header = () => {
           <Link to="/contact" className="hover-underline-animation font-medium  text-[16px] leading-[150%]">Contact Sales</Link>
         </div>
         <div className="flex items-center gap-6">
-          <button className="font-medium text-sm leading-[150%] hover:text-white/90 transition duration-200">Sign in</button>
-          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-[150%] hover:text-white/90 transition duration-200">Start for Free</button>
+          <button className="font-medium text-sm leading-[150%] hover:text-white/90 transition duration-200">
+            <Link to="/sign-in">Sign in</Link>
+          </button>
+          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-[150%] hover:text-white/90 transition duration-200">
+            <Link to="/sign-up">Start for Free</Link></button>
         </div>
       </div>
       <div className="block md:hidden">

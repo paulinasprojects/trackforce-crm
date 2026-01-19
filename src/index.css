@@ -55,7 +55,7 @@ body {
     0 1px 3px rgba(254, 253, 255, 1),
     0 1px 1px rgba(254, 253, 255, 1),
     0 1px 1px rgba(254, 253, 255, 0.12);
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
 }
 
 .integration-gradient {
