@@ -1,4 +1,4 @@
-import { pricingData } from "../lib/data"
+import { pricingData } from "../../lib/data"
 import PricingCard from "./pricing-card"
 
 const PricingSection = () => {

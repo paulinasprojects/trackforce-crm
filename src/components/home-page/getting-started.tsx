@@ -1,4 +1,4 @@
-import { gettingStartedData } from "../lib/data"
+import { gettingStartedData } from "../../lib/data"
 import GettingStartedCard from "./getting-started-card"
 
 const GettingStarted = () => {

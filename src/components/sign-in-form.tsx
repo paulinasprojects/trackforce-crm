@@ -28,7 +28,7 @@ const SignInForm = () => {
         <Card className="lg:w-[740px] md:w-[650px] w-[327px]   wrapper mx-auto rounded-[30px]">
           <CardContent>
             <div>
-              <div className="flex flex-col items-center gap-[16px] mt-[44px]">
+              <div className="flex flex-col items-center gap-[16px] md:mt-[44px] mt-10">
                 <h1 className="lg:text-[48px] text-[32px] text-white font-bold text-center leading-[120%]">Sign In to Your Account</h1>
                 <span className="text-[16px] text-[#c2c2c2] text-center">Welcome to a smarter way of managing tasks and products. Our comprehensive suite is designed to streamline your workflow, enhance collaboration</span>
                 <button className="mt-[16px] inline-flex items-center justify-center gap-2 bg-[#242424] text-white border border-[#878787] px-3 py-2 rounded-lg w-full">

@@ -1,11 +1,11 @@
-import CtaSection from "../components/cta-section"
-import FeatureSection from "../components/feature-section"
-import GettingStarted from "../components/getting-started"
-import Hero from "../components/hero"
-import IntegrationSection from "../components/integration-section"
-import PricingSection from "../components/pricing-section"
-import SocialProof from "../components/social-proof"
-import WhatOurCustomersSay from "../components/what-our-customers-say"
+import CtaSection from "../components/home-page/cta-section"
+import FeatureSection from "../components/home-page/feature-section"
+import GettingStarted from "../components/home-page/getting-started"
+import Hero from "../components/home-page/hero"
+import IntegrationSection from "../components/home-page/integration-section"
+import PricingSection from "../components/home-page/pricing-section"
+import SocialProof from "../components/home-page/social-proof"
+import WhatOurCustomersSay from "../components/home-page/what-our-customers-say"
 
 const HomePage = () => {
   return (

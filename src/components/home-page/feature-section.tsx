@@ -1,4 +1,4 @@
-import { featuresDataOne, featuresDataTwo } from "../lib/data"
+import { featuresDataOne, featuresDataTwo } from "../../lib/data"
 import FeatureCard from "./feature-card"
 
 const FeatureSection = () => {

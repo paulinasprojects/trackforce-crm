@@ -1,4 +1,4 @@
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 import { BsCheck } from "react-icons/bs";
 
 interface PricingCardProps extends React.HTMLAttributes<HTMLDivElement> {
