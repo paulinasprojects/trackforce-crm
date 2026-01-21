@@ -134,4 +134,67 @@ export const pricingData = [
       "24/7 VIP Support",
     ], 
   },
+];
+
+export const footerLinks = [
+  {
+    title: "Company",
+    links: [
+      {
+        name: "Customers",
+        href: "/",
+      },
+      {
+        name: "Blog",
+        href: "/",
+      },
+      {
+        name: "Careers",
+        href: "/",
+      },
+    ]
+  },
+  {
+    title: "Resources",
+    links: [
+      {
+        name: "Changelog",
+        href: "/changelog",
+      },
+      {
+        name: "Documentation",
+        href: "/",
+      },
+    ]
+  },
+  {
+    title: "Customers",
+    links: [
+      {
+        name: "Contact Us",
+        href: "/contact",
+      },
+      {
+        name: "FAQ",
+        href: "/",
+      },
+    ]
+  },
+  {
+    title: "Products",
+    links: [
+      {
+        name: "Work and Collaboration",
+        href: "/",
+      },
+      {
+        name: "Sales Email Template",
+        href: "/",
+      },
+      {
+        name: "Marketing Analytics",
+        href: "/",
+      },
+    ]
+  },
 ]

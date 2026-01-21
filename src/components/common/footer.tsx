@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom"
 import { CiFacebook, CiYoutube } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
+import { footerLinks } from "../../lib/data";
+import FooterLink from "./footer-link";
 
 const Footer = () => {
   return (
@@ -11,28 +12,14 @@ const Footer = () => {
           <p className="text-sm leading-[150%] text-[#c2c2c2] max-w-[342px] md:text-start text-center">Streamline your sales, marketing, and customer  service operations with an all-in-one CRM platform designed to help you grow faster and serve your <br /> customers better.</p>
         </div>
         <div className="grid md:grid-cols-4 grid-cols-2  lg:gap-20 gap-6 md:mt-0 mt-8">
-          <div className="flex flex-col gap-3">
-            <p className="text-[16px] font-medium leading-[150%]">Company</p>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Customers</Link>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Blog</Link>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Careers</Link>
-          </div>
-          <div className="flex flex-col gap-3">
-            <p className="text-[16px] font-medium leading-[150%]">Recourses</p>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Changelog</Link>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Documentation</Link>
-          </div>
-          <div className="flex flex-col gap-3">
-            <p className="text-[16px] font-medium leading-[150%]">Customers</p>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Contact Us</Link>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">FAQ</Link>
-          </div>
-          <div className="flex flex-col gap-3">
-            <p className="text-[16px] font-medium leading-[150%]">Products</p>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Work and Collaboration</Link>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Sales Email Template</Link>
-            <Link to="#" className="text-sm font-medium text-[#c2c2c2]">Marketing Analytics</Link>
-          </div>
+          {footerLinks.map((link, index) => (
+            <div key={index} className="flex flex-col gap-3">
+              <FooterLink
+                title={link.title}
+                links={link.links}
+              />
+            </div>
+          ))}
         </div>
       </div>
       <div className="flex md:flex-row flex-col gap-6 md:gap-0 items-center justify-between mt-[56px]">
