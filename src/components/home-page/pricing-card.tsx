@@ -29,6 +29,7 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
           <div className="mt-6">
             <span className="text-[40px] font-medium text-white">{price}</span>
             <span className="text-lg text-white">{duration}</span>
+            <div className="wrapper" />
           </div>
           <div className="mt-4 flex flex-col gap-3">
             {features.map((feature, idx) => (

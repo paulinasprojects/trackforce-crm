@@ -198,3 +198,36 @@ export const footerLinks = [
     ]
   },
 ]
+
+export const faqAccordionData = [
+  {
+    value: "item-1",
+    title: "What is TrackForce CRM?",
+    description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
+  },
+  {
+    value: "item-2",
+    title: "How can TrackForce improve my sales process?",
+    description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
+  },
+  {
+    value: "item-3",
+    title: "Is TrackForce suitable for small businesses?",
+    description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
+  },
+  {
+    value: "item-4",
+    title: "Can I manage customer support from multiple channels?",
+    description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
+  },
+  {
+    value: "item-5",
+    title: "Can I customize the features of TrackForce for my business?",
+    description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
+  },
+  {
+    value: "item-6",
+    title: "How secure is my data with TrackForce?",
+    description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
+  },
+]

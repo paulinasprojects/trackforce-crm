@@ -1,3 +1,4 @@
+import FaqSection from "../components/pricing-page/faq-section"
 import PricingHeading from "../components/pricing-page/pricing-heading"
 import PricingSection from "../components/pricing-page/pricing-section"
 
@@ -6,6 +7,7 @@ const PricingPage = () => {
     <div>
       <PricingHeading />
       <PricingSection />
+      <FaqSection />
     </div>
   )
 }

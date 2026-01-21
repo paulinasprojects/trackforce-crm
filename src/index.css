@@ -46,7 +46,7 @@ body {
 }
 
 .button-gradient {
-  background: linear-gradient(rgba(255, 255, 255, 0.821) 0%, rgba(1, 26, 255, 0.9) 100%);
+  background: linear-gradient(180deg, rgb(136, 142, 255) 10%, rgba(1, 26, 255, 0.9) 84%);
 }
 
 .wrapper {
