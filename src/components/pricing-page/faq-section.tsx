@@ -14,7 +14,7 @@ const FaqSection = () => {
         </div>
         <div className="bg-[#131314] rounded-[24px]">
           <div className="p-4">
-            <FaqAccordion className="flex flex-col gap-3">
+            <FaqAccordion className="flex flex-col gap-4">
               {faqAccordionData.map((data) => (
                 <FaqAccordionItem key={data.value} className="w-full wrapper rounded-lg p-4" value={data.value}>
                   <FaqAccordionTrigger className="lg:text-[24px] text-lg text-left font-medium leading-[120%]  text-white">{data.title}</FaqAccordionTrigger>

@@ -231,3 +231,18 @@ export const faqAccordionData = [
     description: "TrackForce is a cloud-based CRM platform designed to streamline customer management, sales processes, and marketing efforts. With tools like sales automation, omnichannel support, and data-driven marketing, it helps businesses build stronger customer relationships and increase efficiency.",
   },
 ]
+
+export const contactData = [
+  {
+    name: "Let us guide you through our features, pricing, and more!"
+  },
+  {
+    name: "We're here to ensure you have a seamless experience"
+  },
+  {
+    name: "Let's talk about how we can collaborate."
+  },
+  {
+    name: "Share your thoughts, ideas, or suggestions on how we can make TrackForce even better."
+  },
+]
