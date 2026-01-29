@@ -4,7 +4,7 @@ import EnterpriceCard from "./enterprise-card"
 
 const PricingSection = () => {
   return (
-    <div className="mt-[56px]">
+    <section className="mt-14">
       <div className="xl:mx-20 mx-6">
         <div className="flex lg:flex-row flex-col gap-6 text-white">
           {pricingData.slice(0, 3).map((data) => (
@@ -31,7 +31,7 @@ const PricingSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

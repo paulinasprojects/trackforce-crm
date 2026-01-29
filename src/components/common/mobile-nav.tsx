@@ -53,8 +53,8 @@ const MobileNav = ({ isOpen, onToggle }: { isOpen: boolean; onToggle: () => void
                 <Link className="hover-underline-animation" onClick={onToggle} to="/contact">Contact Sales</Link>
               </div>
               <div className="mt-96 flex flex-col items-center gap-6">
-                <button className="font-medium text-sm leading-[150%] text-white">Sign in</button>
-                <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-[150%]">Start for Free</button>
+                <button className="font-medium text-sm leading-xl text-white">Sign in</button>
+                <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-xl">Start for Free</button>
                 <div className="mt-5">
                   <img src="/trackforce-logo.svg" alt="" />
                 </div>

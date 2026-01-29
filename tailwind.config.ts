@@ -16,7 +16,18 @@ const config: Config = {
       fontFamily: {
         inter: ['"Inter"', "sans-serif"] 
       },
-      colors: {},
+      fontSize: {
+        heading: "64px",
+        headingMedium: "32px",
+        md: "16px",
+      },
+      lineHeight: {
+        lg: "120%",
+        xl: "150%"
+      },
+      colors: {
+        lightGray: "#c2c2c2"
+      },
   },
     // container: {
     //   center: true,

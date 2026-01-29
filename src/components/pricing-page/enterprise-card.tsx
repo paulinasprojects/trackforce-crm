@@ -6,7 +6,7 @@ const EnterpriceCard = ({ name, description, features }: { name: string, descrip
       <div className="grid lg:grid-cols-3 items-center p-6 gap-2">
         <div>
           <p className="text-2xl font-medium text-white">{name}</p>
-          <p className="text-[16px] text-[#c2c2c2] mt-4">{description}</p>
+          <p className="text-md text-lightGray mt-4">{description}</p>
         </div>
         <div className="lg:grid lg:grid-cols-2 flex flex-col lg:items-center md:gap-1.5 gap-3">
           {features.map((feature, idx) => (
@@ -14,7 +14,7 @@ const EnterpriceCard = ({ name, description, features }: { name: string, descrip
               <span className="mr-2">
                 <BsCheck className="size-5" />
               </span>
-              <span className="text-[14px]">{feature}</span>
+              <span className="text-sm">{feature}</span>
             </div>
           ))}
         </div>

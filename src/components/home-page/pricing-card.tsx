@@ -19,13 +19,13 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
         mostPopular ? "outline rounded-2xl outline-[#7c84ff]" : "wrapper rounded-2xl",
       )}>
         {mostPopular && (
-          <div className="bg-[#7c84ff] text-white text-center rounded-t-2xl py-2  text-[16px] font-medium">
+          <div className="bg-[#7c84ff] text-white text-center rounded-t-2xl py-2  text-md font-medium">
             Most Popular
           </div>
         )}
         <div className="p-6">
           <p className="text-2xl font-medium text-white">{name}</p>
-          <p className="text-[14px] text-[#c2c2c2] mt-4">{description}</p>
+          <p className="text-sm text-lightGray mt-4">{description}</p>
           <div className="mt-6">
             <span className="text-[40px] font-medium text-white">{price}</span>
             <span className="text-lg text-white">{duration}</span>
@@ -37,13 +37,13 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
                 <span className="mr-2">
                   <BsCheck className="size-5" />
                 </span>
-                <span className="text-[16px]">{feature}</span>
+                <span className="text-md">{feature}</span>
               </div>
             ))}
           </div>
-          <div className={cn("mt-[56px] flex flex-col gap-4", mostPopular && "mt-[65px]", isStarter && "mt-[69px]")}>
+          <div className={cn("mt-14 flex flex-col gap-4", mostPopular && "mt-[65px]", isStarter && "mt-[69px]")}>
             <button className="button-gradient px-2 py-2 rounded-md text-sm text-white">Get Started</button>
-            <span className="text-center text-[16px] text-[#c2c2c2]">No credit card needed</span>
+            <span className="text-center text-md text-lightGray">No credit card needed</span>
           </div>
         </div>
       </div>

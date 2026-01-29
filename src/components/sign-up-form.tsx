@@ -2,6 +2,7 @@ import { FcGoogle } from "react-icons/fc";
 import { z } from 'zod';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Link } from "react-router-dom";
 
 const signUpSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -28,15 +29,15 @@ const SignUpForm = () => {
 
   return (
     <div className="grid lg:grid-cols-2 gap-10">
-      <div className="text-white xl:mt-20 md:mt-[56px] mt-10 lg:mx-[56px] md:mx-10 mx-6">
-        <h2 className="text-white xl:text-[48px] text-[32px] font-medium leading-[120%] lg:text-start text-center">Create Your Account</h2>
-        <p className="mt-4 text-[16px] text-[#c2c2c2] md:text-start text-center">Welcome to a smarter way of managing tasks and products. Our comprehensive suite is designed to streamline your workflow</p>
+      <div className="text-white xl:mt-20 md:mt-[56px] mt-10 lg:mx-14 md:mx-10 mx-6">
+        <h2 className="text-white xl:text-5xl text-headingMedium font-medium leading-lg lg:text-start text-center">Create Your Account</h2>
+        <p className="mt-4 text-md text-lightGray md:text-start text-center">Welcome to a smarter way of managing tasks and products. Our comprehensive suite is designed to streamline your workflow</p>
         <button className="mt-[16px] inline-flex items-center justify-center gap-2 bg-[#242424] text-white border border-[#878787] px-3 py-2 rounded-lg w-full">
           <FcGoogle />
-          <span className="text-white text-[16px] leading-[150%]">Register with Google</span>
+          <span className="text-white text-md leading-xl">Register with Google</span>
         </button>
         <div className="inline-flex items-center gap-2 mt-[16px]">
-          <div className="h-[1px] xl:w-[200px] lg:w-[105px] md:w-[260px] w-[115px] bg-[#606060]" /> <span className="text-white text-[14px] whitespace-nowrap">register with your email</span> <div className="h-[1px] xl:w-[200px] lg:w-[105px]  md:w-[260px] w-[115px] bg-[#606060]" />
+          <div className="h-[1px] xl:w-[200px] lg:w-[105px] md:w-[260px] w-[115px] bg-[#606060]" /> <span className="text-white text-sm whitespace-nowrap">register with your email</span> <div className="h-[1px] xl:w-[200px] lg:w-[105px]  md:w-[260px] w-[115px] bg-[#606060]" />
         </div>
         <div className="mt-4">
           <form onSubmit={handleSubmit(onSubmit)} id="sign-up-form">
@@ -46,7 +47,7 @@ const SignUpForm = () => {
                 control={control}
                 render={({ field, fieldState }) => (
                   <div className="flex flex-col gap-2">
-                    <label className="text-white text-[16px] font-medium leading-[150%]">Full Name</label>
+                    <label className="text-white text-md font-medium leading-xl">Full Name</label>
                     <input
                       {...field}
                       aria-invalid={fieldState.invalid}
@@ -63,7 +64,7 @@ const SignUpForm = () => {
                 control={control}
                 render={({ field, fieldState }) => (
                   <div className="flex flex-col gap-2">
-                    <label className="text-white text-[16px] font-medium leading-[150%]">Email</label>
+                    <label className="text-white text-md font-medium leading-xl">Email</label>
                     <input
                       {...field}
                       aria-invalid={fieldState.invalid}
@@ -80,7 +81,7 @@ const SignUpForm = () => {
                 control={control}
                 render={({ field, fieldState }) => (
                   <div className="flex flex-col gap-2">
-                    <label className="text-white text-[16px] font-medium leading-[150%]">Password</label>
+                    <label className="text-white text-md font-medium leading-xl">Password</label>
                     <input
                       {...field}
                       type="password"
@@ -94,8 +95,12 @@ const SignUpForm = () => {
                 )}
               />
             </div>
+            <div className="pt-6 inline-flex gap-2">
+              <p>Already have an account?</p>
+              <Link to="/sign-in" className="underline hover:text-white/80">Sign in</Link>
+            </div>
             <button form="sign-up-form" className="mt-5 px-3 py-2 rounded-md w-full button-gradient text-white" type="submit">Register</button>
-            <p className="text-center text-white text-[16px] mt-[16px]">By clicking the button, you agree to our Terms, Privacy Policy and Security Policy.</p>
+            <p className="text-center text-white text-md mt-[16px]">By clicking the button, you agree to our Terms, Privacy Policy and Security Policy.</p>
           </form>
         </div>
       </div>

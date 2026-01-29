@@ -33,7 +33,7 @@ const ContactUsForm = () => {
             control={control}
             render={({ field, fieldState }) => (
               <div className="flex flex-col gap-2">
-                <label className="text-white text-[16px] font-medium leading-[150%]">Name <span className="text-red-500">*</span></label>
+                <label className="text-white text-md font-medium leading-xl">Name <span className="text-red-500">*</span></label>
                 <input
                   {...field}
                   aria-invalid={fieldState.invalid}
@@ -41,7 +41,7 @@ const ContactUsForm = () => {
                   placeholder="Your name"
                   className="outline outline-[#606060] bg-[#1010] rounded-md px-2 py-2 placeholder:text-sm w-full"
                 />
-                {errors.name && <span className="text-red-500 text-[12px] mt-2">{errors.name.message}</span>}
+                {errors.name && <span className="text-red-500 text-xs mt-2">{errors.name.message}</span>}
               </div>
             )}
           />
@@ -50,7 +50,7 @@ const ContactUsForm = () => {
             control={control}
             render={({ field, fieldState }) => (
               <div className="flex flex-col gap-2">
-                <label className="text-white text-[16px] font-medium leading-[150%]">Business Email Address<span className="text-red-500">*</span></label>
+                <label className="text-white text-md font-medium leading-xl">Business Email Address<span className="text-red-500">*</span></label>
                 <input
                   {...field}
                   aria-invalid={fieldState.invalid}
@@ -58,7 +58,7 @@ const ContactUsForm = () => {
                   autoComplete="off"
                   className="outline outline-[#606060] bg-[#1010] rounded-md px-2 py-2 placeholder:text-sm w-full"
                 />
-                {errors.email && <span className="text-red-500 text-[12px] mt-2">{errors.email.message}</span>}
+                {errors.email && <span className="text-red-500 text-sm mt-2">{errors.email.message}</span>}
               </div>
             )}
           />
@@ -67,20 +67,20 @@ const ContactUsForm = () => {
             control={control}
             render={({ field, fieldState }) => (
               <div className="flex flex-col gap-2">
-                <label className="text-white text-[16px] font-medium leading-[150%]">Message</label>
+                <label className="text-white text-md font-medium leading-xl">Message</label>
                 <textarea
                   {...field}
                   aria-invalid={fieldState.invalid}
                   placeholder="Input message"
                   className="outline outline-[#606060] rounded-md bg-[#1010]  px-2 py-2 placeholder:text-sm w-full md:h-[186px] h-[100px] placeholder:p-4"
                 />
-                {errors.message && <span className="text-red-500 text-[12px]">{errors.message.message}</span>}
+                {errors.message && <span className="text-red-500 text-xs">{errors.message.message}</span>}
               </div>
             )}
           />
         </div>
         <button form="contact-us-form" className="mt-5 px-3 py-2 rounded-md w-full button-gradient text-white" type="submit">Submit</button>
-        <p className="text-[#c2c2c2] text-sm mt-[16px]">By submitting this form you agree to our friendly privacy policy.</p>
+        <p className="text-lightGray text-sm mt-[16px]">By submitting this form you agree to our friendly privacy policy.</p>
       </form>
     </div>
   )

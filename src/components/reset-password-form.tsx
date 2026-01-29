@@ -27,8 +27,8 @@ const ResetPasswordForm = () => {
           <CardContent>
             <div className="text-white">
               <div className='flex flex-col items-center gap-[16px] mt-[44px]'>
-                <h1 className="lg:text-[48px] text-[32px] text-white font-bold text-center leading-[120%]">Reset Password</h1>
-                <p className='text-[16px] text-[#c2c2c2] text-center'>We'll send you password reset instructions.</p>
+                <h1 className="lg:text-5xl text-headingMedium text-white font-bold text-center leading-lg">Reset Password</h1>
+                <p className='text-md text-lightGray text-center'>We'll send you password reset instructions.</p>
               </div>
               <div className="md:m-10">
                 <form onSubmit={handleSubmit(onSubmit)} id='reset-password'>
@@ -38,7 +38,7 @@ const ResetPasswordForm = () => {
                       control={control}
                       render={({ field, fieldState }) => (
                         <div className="flex flex-col gap-2">
-                          <label htmlFor="" className="text-white text-[16px] font-medium leading-[150%]">Email</label>
+                          <label className="text-white text-md font-medium leading-xl">Email</label>
                           <input
                             {...field}
                             aria-invalid={fieldState.invalid}
@@ -54,7 +54,12 @@ const ResetPasswordForm = () => {
                   <button className='mt-8 px-3 py-2 rounded-md w-full button-gradient text-white' form='reset-password' type='submit'>
                     Send Reset Email
                   </button>
-                  <p className='mt-8 text-center text-[16px] text-white'>Remember your password? <Link to="/sign-in" className='underline'>Sign in</Link></p>
+                  <p className='pt-8 text-center text-md text-white inline-flex gap-2'>
+                    Remember your password?
+                    <Link to="/sign-in" className='underline'>
+                      Sign in
+                    </Link>
+                  </p>
                 </form>
               </div>
             </div>
