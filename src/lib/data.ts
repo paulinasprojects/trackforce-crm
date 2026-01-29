@@ -141,8 +141,8 @@ export const footerLinks = [
     title: "Company",
     links: [
       {
-        name: "Customers",
-        href: "/",
+        name: "Customer",
+        href: "/customer",
       },
       {
         name: "Blog",
@@ -244,5 +244,56 @@ export const contactData = [
   },
   {
     name: "Share your thoughts, ideas, or suggestions on how we can make TrackForce even better."
+  },
+]
+
+export const customersData = [
+  {
+    id: 1,
+    logo: "/stellartech.svg",
+    title: "Boosting Sales Efficiency",
+    series: "Series B",
+    category: "Technology",
+    description: "Using TrackForce's Data-Driven Marketing tools, StellarTech segmented its audience based on purchasing history and preferences. Personalized email campaigns were then launched, directly targeting customer interests and needs.",
+    successPercent: "35% Reduction",
+    successTitle: "in manual tasks",
+    successPercentTwo: "25% increase",
+    successTitleTwo: "in deal closures"
+  },
+  {
+    id: 2,
+    logo: "/cascadestyle.svg",
+    title: "Boosting Marketing Campaign Success",
+    series: "Series Seed",
+    category: "E-commerce",
+    description: "Using TrackForce's Data-Driven Marketing tools, CascadeStyle segmented its audience based on purchasing history and preferences. Personalized email campaigns were then launched, directly targeting customer interests and needs.",
+    successPercent: "45% increase",
+    successTitle: "in email open rates",
+    successPercentTwo: "25% boost",
+    successTitleTwo: "in conversion rates"
+  },
+  {
+    id: 3,
+    logo: "/biomark.svg",
+    title: "Enhancing Customer Experience",
+    series: "Series Seed",
+    category: "Healthcare",
+    description: "TrackForce's Omnichannel Support unified all customer interactions into a single dashboard, allowing their support team to respond promptly and maintain quality across all channels. The CRM's tracking and history features helped resolve issues faster and deliver personalized responses.",
+    successPercent: "50% improvement",
+    successTitle: "in response times",
+    successPercentTwo: "30% boost",
+    successTitleTwo: "in customer satisfaction"
+  },
+  {
+    id: 4,
+    logo: "/braincraze.svg",
+    title: "Improving Project Collaboration",
+    series: "Series B",
+    category: "Real Estate",
+    description: "TrackForce's Document Management and Collaboration Tools enabled Braincraze to store project documents securely, assign tasks, and track project progress in real time. The CRM's shared dashboard kept everyone aligned and provided a central point for updates.",
+    successPercent: "35% Faster",
+    successTitle: "completion of project milestones",
+    successPercentTwo: "20% decrease",
+    successTitleTwo: "in communication errors"
   },
 ]
