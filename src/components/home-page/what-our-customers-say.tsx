@@ -1,3 +1,5 @@
+import { MdChevronRight } from "react-icons/md";
+
 const WhatOurCustomersSay = () => {
   return (
     <section className="md:my-[100px] my-10 xl:mx-20 md:mx-10 mx-6">
@@ -9,7 +11,10 @@ const WhatOurCustomersSay = () => {
           <p className="text-lightGray text-sm md:text-md lg:text-lg text-center lg:text-start">
             TrackForce has helped businesses streamline their processes and boost customer relationships. Hear from some of our happy clients!
           </p>
-          <button className="button-gradient px-2 py-2 rounded-md w-full lg:w-fit text-white">Book a Free Demo Call</button>
+          <button className="inline-flex gap-2 items-center justify-center button-gradient px-2 py-2 rounded-md w-full lg:w-fit text-white">
+            Book a Free Demo Call
+            <MdChevronRight className="size-5" />
+          </button>
         </div>
         <div>
           <img src="/feedback-list.png" alt="" className="w-full" />
