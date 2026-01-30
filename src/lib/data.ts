@@ -297,3 +297,108 @@ export const customersData = [
     successTitleTwo: "in communication errors"
   },
 ]
+
+export const changelogReleases = [
+  {
+    id: '1',
+    title: 'Enhanced Reporting Tools',
+    description: "We've added more customizable reporting options, giving you the ability to create in-depth analytics tailored to your specific KPIs.",
+    date: '2024-11',
+    version: '3.3.0',
+    tags: {
+      releaseType: "Reporting's",
+      productArea: 'Analytics',
+      integration: 'Docs',
+    },
+    image: "/tools.png",
+    benefits: [
+      'Gain deeper insights into performance.',
+      'Tailor reports to match your business needs.',
+    ]
+  },
+  {
+    id: '2',
+    title: 'Secure Document Sharing and Collaboration',
+    description: 'Easily share and collaborate on documents securely within your team or with clients. Control access levels, track changes, and ensure smooth document workflows.',
+    date: '2024-10',
+    version: '1.2.5',
+    tags: {
+      releaseType: 'Sales',
+      productArea: 'CRM',
+      integration: 'Docs',
+    },
+    image: "/documents.png",
+    benefits: [
+      'Securely manage document sharing and permissions.',
+      'Collaborate in real-time without confusion.',
+    ]
+  },
+  {
+    id: '3',
+    title: 'Task Automation Rules',
+    description: 'Automate repetitive tasks with customizable rules, so you can focus on higher-value activities. Set triggers for actions such as follow-up emails, status updates, and lead nurturing steps.',
+    date: '2024-10',
+    version: '1.2.3',
+    tags: {
+      releaseType: 'Automation',
+      productArea: 'CRM',
+      integration: 'Email',
+    },
+   image: "/documents.png",
+    benefits: [
+      'Save time by automating routine tasks.',
+      'Reduce human error with predefined workflows.',
+    ]
+  },
+  {
+    id: '4',
+    title: 'Recurring Task Scheduling',
+    description: 'Easily set up recurring tasks for daily, weekly, or monthly intervals to ensure you stay on top of regular activities without manual input.',
+    date: '2024-09',
+    version: '3.1.5',
+    tags: {
+      releaseType: 'Communication',
+      productArea: 'Automation',
+      integration: 'Calendar',
+    },
+    image: "/documents.png",
+    benefits: [
+      'Automate repetitive tasks on a schedule.',
+      'Free up time for strategic work.',
+    ]
+  },
+  {
+    id: '5',
+    title: 'Customizable Sales Pipelines',
+    description: 'You can now fully customize your sales pipelines with multiple stages, automation rules, and advanced reporting metrics.',
+    date: '2024-08',
+    version: '3.0.8',
+    tags: {
+      releaseType: 'Sales',
+      productArea: 'CRM',
+      integration: 'Telegram',
+    },
+   image: "/documents.png",
+    benefits: [
+      'Align the sales pipeline with your specific process.',
+      'Automate stage changes for smoother management.',
+    ]
+  },
+  {
+    id: '6',
+    title: 'Advanced CRM Analytics',
+    description: 'Get comprehensive insights into your customer relationships with advanced analytics and reporting features.',
+    date: '2024-11',
+    version: '3.2.0',
+    tags: {
+      releaseType: 'CRM',
+      productArea: 'Automation',
+      integration: 'Email',
+    },
+    image: "/documents.png",
+    benefits: [
+      'Track customer engagement metrics.',
+      'Identify trends and opportunities.',
+    ]
+  },
+];
