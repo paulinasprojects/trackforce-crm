@@ -1,4 +1,4 @@
-import {UserCircleIcon, KanbanIcon, ChartDonutIcon} from "../components/common/icons";
+import {UserCircleIcon, KanbanIcon, ChartDonutIcon, HeartBeatIcon, MapPinLineIcon, BookBookmarkIcon, CalendarBlankIcon, SparkleIcon, CreditCardIcon} from "../components/common/icons";
 
 export const gettingStartedData = [
   {
@@ -437,5 +437,44 @@ export const collaborationData = [
       "Enhanced Accountability",
       "Seamless Collaboration Insights",
     ]
+  },
+]
+
+export const careersBenefitsData = [
+  {
+    id: 1,
+    title: "Health and Wellness",
+    description: "Full medical, dental, and vision coverage to keep you and your family healthy.",
+    icon: HeartBeatIcon,
+  },
+  {
+    id: 2,
+    title: "Flexible Work Environment",
+    description: "Choose to work from home, the office, or both—balance that fits your life.",
+    icon: MapPinLineIcon,
+  },
+  {
+    id: 3,
+    title: "Professional Development",
+    description: "Advance your skills with training, mentorship, and access to top industry courses.",
+    icon: BookBookmarkIcon,
+  },
+  {
+    id: 4,
+    title: "Generous Paid Time Off",
+    description: "Ample PTO, holidays, and mental health days to recharge and spend time with loved ones.",
+    icon: CalendarBlankIcon,
+  },
+  {
+    id: 5,
+    title: "Team-Building and Events",
+    description: "Regular events and activities that keep our team connected and inspired.",
+    icon: SparkleIcon,
+  },
+  {
+    id: 6,
+    title: "Retirement Savings",
+    description: "Retirement plans and resources to help you build a secure financial future.",
+    icon: CreditCardIcon,
   },
 ]
