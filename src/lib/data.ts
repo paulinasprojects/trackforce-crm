@@ -150,7 +150,7 @@ export const footerLinks = [
       },
       {
         name: "Careers",
-        href: "/",
+        href: "/careers",
       },
     ]
   },

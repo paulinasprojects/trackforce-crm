@@ -9,6 +9,7 @@ import ContactPage from './pages/contact-page';
 import CustomerPage from './pages/customer-page';
 import ChangelogPage from './pages/changelog-page';
 import ProductPage from './pages/product-page';
+import CareersPage from './pages/careers-page';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/changelog' element={<MainLayout><ChangelogPage /></MainLayout>} />
       <Route path='/customer' element={<MainLayout><CustomerPage /></MainLayout>} />
       <Route path='/product' element={<MainLayout><ProductPage /></MainLayout>} />
+      <Route path='/careers' element={<MainLayout><CareersPage /></MainLayout>} />
       <Route path='/sign-up' element={<SignUpPage />} />
       <Route path='/sign-in' element={<SignInPage />} />
       <Route path='/reset-password' element={<ResetPasswordPage />} />
