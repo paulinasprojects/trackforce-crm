@@ -402,3 +402,40 @@ export const changelogReleases = [
     ]
   },
 ];
+
+
+export const collaborationData = [
+  {
+    id: 1,
+    title: "Real-Time Collaborative Task Management",
+    description: "Organize tasks across teams with ease. From assigning tasks to tracking project milestones, TrackForce provides an intuitive task management system that keeps everyone aligned and focused on shared goals.",
+    image: "/collaboration-image.png",
+    benefits: [
+      "Live Task Updates",
+      "Transparent Task Assignments",
+      "Streamlined Project Workflow",
+    ]
+  },
+  {
+    id: 2,
+    title: "Customizable Notifications and Alerts",
+    description: "Never miss a deadline or update. Personalized notifications keep your team informed, so even the smallest details don't slip through the cracks.",
+    image: "/collaboration-image.png",
+    benefits: [
+      "Prioritize Key Updates",
+      "Real-Time Reminders",
+      "Enhanced Focus",
+    ]
+  },
+  {
+    id: 3,
+    title: "Stay in Sync with Real-Time Activity Tracking",
+    description: "Monitor team progress and maintain clear visibility on every collaborative effort—because staying connected means achieving goals together.",
+    image: "/collaboration-image.png",
+    benefits: [
+      "Real-Time Project Updates",
+      "Enhanced Accountability",
+      "Seamless Collaboration Insights",
+    ]
+  },
+]
