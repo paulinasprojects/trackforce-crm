@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import GradientButton from "../common/gradient-button"
 import ChangeLogButton from "./change-log-button"
 
 const Hero = () => {
@@ -15,7 +17,9 @@ const Hero = () => {
             <br className="hidden xl:hidden lg:block" /> to help you grow faster and serve your customers better.
           </span>
           <div className="flex md:flex-row sm:flex-col gap-4 mt-10 w-full">
-            <button className="button-gradient px-4 py-2 rounded-lg text-white hover:text-white/90 transition duration-200">Get Started For Free</button>
+            <GradientButton>
+              <Link to="/sign-up">Get Started For Free</Link>
+            </GradientButton>
             <button className="bg-white text-black px-4 py-2 rounded-lg hover:bg-white/90 duration-200 transition">Book a Demo</button>
           </div>
         </div>

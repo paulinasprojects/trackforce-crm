@@ -2,6 +2,7 @@ import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import GradientButton from "./gradient-button";
 
 const menuVariants = {
   hidden: {
@@ -53,8 +54,12 @@ const MobileNav = ({ isOpen, onToggle }: { isOpen: boolean; onToggle: () => void
                 <Link className="hover-underline-animation" onClick={onToggle} to="/contact">Contact Sales</Link>
               </div>
               <div className="mt-96 flex flex-col items-center gap-6">
-                <button className="font-medium text-sm leading-xl text-white">Sign in</button>
-                <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-xl">Start for Free</button>
+                <button className="font-medium text-sm leading-xl text-white">
+                  <Link to="/sign-in">Sign in</Link>
+                </button>
+                <GradientButton>
+                  <Link to="/sign-up">Start for Free</Link>
+                </GradientButton>
                 <div className="mt-5">
                   <img src="/trackforce-logo.svg" alt="" />
                 </div>

@@ -1,3 +1,5 @@
+import GradientButton from "../common/gradient-button"
+
 const ProductHeading = () => {
   return (
     <section className="mt-14 text-white lg:mx-[189px] md:mx-16 mx-6 flex flex-col gap-6 items-center justify-center">
@@ -7,7 +9,7 @@ const ProductHeading = () => {
         Efficient teamwork is essential to driving your business forward. With TrackForce's Work and Collaboration feature, your teams can collaborate seamlessly, track progress in real time, and stay aligned on every project.
       </p>
       <div className="flex md:flex-row flex-col gap-4 mt-3 md:w-fit w-full">
-        <button className="button-gradient px-3 py-3.5 rounded-lg md:text-md text-sm md:w-fit w-full">Get Started for Free</button>
+        <GradientButton className="md:text-md text-sm md:w-fit w-full">Get Started for Free</GradientButton>
         <button className="bg-white text-black px-3 py-3.5 rounded-lg md:w-fit w-full">Book a Demo</button>
       </div>
     </section>

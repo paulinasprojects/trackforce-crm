@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Card, CardContent } from "./common/card";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import GradientButton from "./common/gradient-button";
 
 const signInSchema = z.object({
   email: z.email().min(1, "Email is required"),
@@ -81,7 +82,13 @@ const SignInForm = () => {
                       )}
                     />
                   </div>
-                  <button form="sign-in-form" className="mt-5 px-3 py-2 rounded-md w-full button-gradient text-white" type="submit">Sign in</button>
+                  <GradientButton
+                    className="mt-5 w-full"
+                    form="sign-in-form"
+                    type="submit"
+                  >
+                    Sign in
+                  </GradientButton>
                   <div className="pt-5 inline-flex gap-2">
                     <p>Don't have an account?</p>
                     <Link to="/sign-up" className="underline hover:text-white/80">Sign up</Link>

@@ -1,4 +1,5 @@
 import { featuresDataOne } from "../../lib/data";
+import GradientButton from "../common/gradient-button";
 import FeatureCard from "../home-page/feature-card";
 
 const FeaturedProductSection = () => {
@@ -14,7 +15,9 @@ const FeaturedProductSection = () => {
           <p className="text-sm md:text-md lg:text-lg mt-4 md:mt-0 text-center md:text-start text-lightGray">
             Unlock the potential of your team with tools that streamline workflows, enhance accountability, and improve communication.
           </p>
-          <button className="mt-6 button-gradient px-3 py-2 rounded-md w-full md:w-fit text-white">View All Benefits</button>
+          <GradientButton className="mt-6 w-full md:w-fit">
+            View All Benefits
+          </GradientButton>
         </div>
       </div>
       <div className="flex lg:flex-row flex-col gap-6 mt-[57px]">

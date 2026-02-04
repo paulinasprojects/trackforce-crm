@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 import { Card, CardContent } from "./common/card";
 import { zodResolver } from '@hookform/resolvers/zod';
+import GradientButton from './common/gradient-button';
 
 const resetPasswordSchema = z.object({
   email: z.email().min(1, "Email is required"),
@@ -51,9 +52,12 @@ const ResetPasswordForm = () => {
                       )}
                     />
                   </div>
-                  <button className='mt-8 px-3 py-2 rounded-md w-full button-gradient text-white' form='reset-password' type='submit'>
+                  <GradientButton
+                    className='mt-8 w-full'
+                    form='reset-password'
+                    type='submit'>
                     Send Reset Email
-                  </button>
+                  </GradientButton>
                   <p className='pt-8 text-center text-md text-white inline-flex gap-2'>
                     Remember your password?
                     <Link to="/sign-in" className='underline'>

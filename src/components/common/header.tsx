@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MobileNav from "./mobile-nav"
 import { Link } from "react-router-dom";
+import GradientButton from "./gradient-button";
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,8 +26,9 @@ const Header = () => {
           <button className="font-medium text-sm text-white leading-xl hover:text-white/90 transition duration-200">
             <Link to="/sign-in">Sign in</Link>
           </button>
-          <button className="button-gradient text-white px-6 py-2.5 rounded-md font-medium text-sm leading-xl hover:text-white/90 transition duration-200">
-            <Link to="/sign-up">Start for Free</Link></button>
+          <GradientButton>
+            <Link to="/sign-up">Start for Free</Link>
+          </GradientButton>
         </div>
       </div>
       <div className="block md:hidden">

@@ -1,3 +1,5 @@
+import GradientButton from "../common/gradient-button"
+
 const IntegrationSection = () => {
   return (
     <section className='md:my-[100px] my-10 xl:mx-16 md:mx-10 mx-6'>
@@ -9,7 +11,9 @@ const IntegrationSection = () => {
             <p className="text-lightGray lg:text-lg md:text-md text-sm text-center">
               TrackForce connects effortlessly with the tools you already use, from email platforms to project management systems.
             </p>
-            <button className="button-gradient px-2 py-2 rounded-md md:w-fit w-full text-white text-sm font-medium leading-xl">See All Integration</button>
+            <GradientButton className="md:w-fit w-full">
+              See All Integration
+            </GradientButton>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { featuresDataOne, featuresDataTwo } from "../../lib/data"
+import GradientButton from "../common/gradient-button"
 import FeatureCard from "./feature-card"
 
 const FeatureSection = () => {
@@ -14,7 +15,11 @@ const FeatureSection = () => {
           <p className="text-sm md:text-md lg:text-lg mt-4 md:mt-0 text-center md:text-start text-lightGray">
             Explore additional tools designed to enhance your customer management, streamline workflows, and drive business growth.
           </p>
-          <button className="mt-6 button-gradient px-3 py-2 rounded-md w-full md:w-fit text-white">View All Features</button>
+          <GradientButton
+            className="mt-6 w-full md:w-fit"
+          >
+            View All Features
+          </GradientButton>
         </div>
       </div>
       <div className="flex lg:flex-row flex-col gap-6 mt-[57px]">

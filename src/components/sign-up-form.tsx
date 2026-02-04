@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Link } from "react-router-dom";
+import GradientButton from "./common/gradient-button";
 
 const signUpSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -99,7 +100,13 @@ const SignUpForm = () => {
               <p>Already have an account?</p>
               <Link to="/sign-in" className="underline hover:text-white/80">Sign in</Link>
             </div>
-            <button form="sign-up-form" className="mt-5 px-3 py-2 rounded-md w-full button-gradient text-white" type="submit">Register</button>
+            <GradientButton
+              className="mt-5 w-full"
+              form="sign-up-form"
+              type="submit"
+            >
+              Register
+            </GradientButton>
             <p className="text-center text-white text-md mt-[16px]">By clicking the button, you agree to our Terms, Privacy Policy and Security Policy.</p>
           </form>
         </div>

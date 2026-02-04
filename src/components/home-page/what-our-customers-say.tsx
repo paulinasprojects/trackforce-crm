@@ -1,4 +1,5 @@
 import { MdChevronRight } from "react-icons/md";
+import GradientButton from "../common/gradient-button";
 
 const WhatOurCustomersSay = () => {
   return (
@@ -11,10 +12,10 @@ const WhatOurCustomersSay = () => {
           <p className="text-lightGray text-sm md:text-md lg:text-lg text-center lg:text-start">
             TrackForce has helped businesses streamline their processes and boost customer relationships. Hear from some of our happy clients!
           </p>
-          <button className="inline-flex gap-2 items-center justify-center button-gradient px-2 py-2 rounded-md w-full lg:w-fit text-white">
+          <GradientButton className="inline-flex gap-2 items-center justify-center w-full lg:w-fit">
             Book a Free Demo Call
             <MdChevronRight className="size-5" />
-          </button>
+          </GradientButton>
         </div>
         <div>
           <img src="/feedback-list.png" alt="" className="w-full" />

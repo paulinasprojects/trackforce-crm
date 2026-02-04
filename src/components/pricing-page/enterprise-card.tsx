@@ -1,4 +1,5 @@
 import { BsCheck } from "react-icons/bs"
+import GradientButton from "../common/gradient-button"
 
 const EnterpriceCard = ({ name, description, features }: { name: string, description: string, features: string[] }) => {
   return (
@@ -19,7 +20,7 @@ const EnterpriceCard = ({ name, description, features }: { name: string, descrip
           ))}
         </div>
         <div className="my-6 lg:mt-5 mt-36">
-          <button className="button-gradient px-2 py-2 rounded-md text-sm text-white w-full">Contact Us and Book a Demo</button>
+          <GradientButton className="w-full">Contact Us and Book a Demo</GradientButton>
         </div>
       </div>
     </div>

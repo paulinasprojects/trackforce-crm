@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import GradientButton from "../common/gradient-button";
 
 const signInSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -79,7 +80,13 @@ const ContactUsForm = () => {
             )}
           />
         </div>
-        <button form="contact-us-form" className="mt-5 px-3 py-2 rounded-md w-full button-gradient text-white" type="submit">Submit</button>
+        <GradientButton
+          className="mt-5 w-full"
+          form="contact-us-form"
+          type="submit"
+        >
+          Submit
+        </GradientButton>
         <p className="text-lightGray text-sm mt-[16px]">By submitting this form you agree to our friendly privacy policy.</p>
       </form>
     </div>

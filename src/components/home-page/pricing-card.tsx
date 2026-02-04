@@ -1,5 +1,6 @@
 import { cn } from "../../lib/utils";
 import { BsCheck } from "react-icons/bs";
+import GradientButton from "../common/gradient-button";
 
 interface PricingCardProps extends React.HTMLAttributes<HTMLDivElement> {
   isStarter: boolean;
@@ -42,7 +43,7 @@ const PricingCard = ({ name, duration, description, price, features, mostPopular
             ))}
           </div>
           <div className={cn("mt-14 flex flex-col gap-4", mostPopular && "mt-[65px]", isStarter && "mt-[69px]")}>
-            <button className="button-gradient px-2 py-2 rounded-md text-sm text-white">Get Started</button>
+            <GradientButton>Get Started</GradientButton>
             <span className="text-center text-md text-lightGray">No credit card needed</span>
           </div>
         </div>
